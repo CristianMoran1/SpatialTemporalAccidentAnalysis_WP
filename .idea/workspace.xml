@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4077aef9-2fe4-4f1c-9367-14dd830a39fb" name="Changes" comment="">
+    <list default="true" id="4077aef9-2fe4-4f1c-9367-14dd830a39fb" name="Changes" comment="final changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -130,14 +130,27 @@
       <workItem from="1712780671953" duration="2485000" />
       <workItem from="1712785575775" duration="26144000" />
       <workItem from="1712956599755" duration="65448000" />
-      <workItem from="1713505574120" duration="2054000" />
+      <workItem from="1713505574120" duration="2798000" />
     </task>
+    <task id="LOCAL-00001" summary="final changes">
+      <option name="closed" value="true" />
+      <created>1713508766015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713508766015</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="final changes" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SanAntonio_Map$main.coverage" NAME="main Coverage Results" MODIFIED="1713508632231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SanAntonio_Map$main.coverage" NAME="main Coverage Results" MODIFIED="1713509475954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

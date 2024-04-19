@@ -264,7 +264,7 @@ tableau_url = "https://public.tableau.com/views/SA2020SelectCityCouncilData2023P
 poverty_correlation_section_layout = html.Div(style={'padding': '20px'}, children=[
     html.H2("Correlation between Accidents and Poverty in San Antonio", style={'textAlign': 'center', 'color': '#FFFFFF', 'margin-bottom': '40px'}),
     html.Div(style={'display': 'flex', 'flexDirection': 'row', 'gap': '80px'}, children=[
-        html.Iframe(src=tableau_url, style={'width': '800px', 'height': '600px', 'border': 'none'}),
+        html.Iframe(src=tableau_url, style={'width': '800px', 'height': '650px', 'border': 'none'}),
         html.Div(style={'margin-left': '60px'}, children=[
             dcc.Graph(id='micromorts-bar-chart', style={'width': '800px', 'height': '650px', 'border': 'none'})
         ])
