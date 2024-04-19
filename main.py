@@ -200,42 +200,42 @@ correlation_section_layout = html.Div(style={'padding': '20px', 'display': 'flex
 
 
 
-# Define the data for the new table
-data_table = {
-    'District #': ['District 1 (Central & North side)', 'District 2 (Central & East side)', 'District 3 (Central & Southeast side)', 'District 4 (Southwest side)', 'District 5 (Central and West side)', 'District 6 (West side)', 'District 7 (West & Northwest side)', 'District 8 (Northwest side)', 'District 9 (North side)', 'District 10 (Northeast side)', 'Total'],
-    'Accidents': ['12.31%', '16.00%', '11.33%', '10.32%', '11.83%', '8.20%', '7.33%', '8.08%', '5.80%', '9.00%', '2801' ],
-    'Fatalities': ['11.65%', '12.57%', '6.25%', '6.74%', '15.36%', '11.00%', '11.39%', '8.27%', '8.63%', '8.14%', '2817'],
-    'Micromorts y = (k/p) * (1000000/p)': ['2325 out of 1000000', '2475 out of 1000000', '1250 out of 1000000', '1397 out of 1000000', '3065 out of 1000000', '1933 out of 1000000', '2194 out of 1000000', '1605 out of 1000000', '1682 out of 1000000', '1550 out of 1000000', '19386 out of 1000000']
-}
+# # Define the data for the new table
+# data_table = {
+#     'District #': ['District 1 (Central & North side)', 'District 2 (Central & East side)', 'District 3 (Central & Southeast side)', 'District 4 (Southwest side)', 'District 5 (Central and West side)', 'District 6 (West side)', 'District 7 (West & Northwest side)', 'District 8 (Northwest side)', 'District 9 (North side)', 'District 10 (Northeast side)', 'Total'],
+#     'Accidents': ['12.31%', '16.00%', '11.33%', '10.32%', '11.83%', '8.20%', '7.33%', '8.08%', '5.80%', '9.00%', '2801' ],
+#     'Fatalities': ['11.65%', '12.57%', '6.25%', '6.74%', '15.36%', '11.00%', '11.39%', '8.27%', '8.63%', '8.14%', '2817'],
+#     'Micromorts y = (k/p) * (1000000/p)': ['2325 out of 1000000', '2475 out of 1000000', '1250 out of 1000000', '1397 out of 1000000', '3065 out of 1000000', '1933 out of 1000000', '2194 out of 1000000', '1605 out of 1000000', '1682 out of 1000000', '1550 out of 1000000', '19386 out of 1000000']
+# }
+#
+#
+# # Create a DataFrame for the new table
+# df_table = pd.DataFrame(data_table)
 
-
-# Create a DataFrame for the new table
-df_table = pd.DataFrame(data_table)
-
-# Update the layout for the new table
-table_layout = html.Div([
-    html.Div([
-        html.H2("Analysis",
-                style={'textAlign': 'center', 'color': '#FFFFFF', 'margin-bottom': '20px', 'margin-top': '10px'}),
-        dash_table.DataTable(
-            id='new-summary-table',
-            columns=[{'name': col, 'id': col} for col in df_table.columns],
-            data=df_table.to_dict('records'),
-            style_table={'height': '800px', 'width': '700px', 'overflowY': 'auto'}
-        ),
-    ], style={'flex': '1', 'margin-right': '20px', 'margin-bottom': '0px', 'vertical-align': 'top'}),
-
-    html.Div([
-        html.P(
-            "Upon the inspection of the data analyzed and gathered, we were able to identify that out of the total 2701 accidents that occurred over the span of two decades in all of the districts, these particular 4 districts consisted of 52% of the total accidents, which is more than half.",
-            style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
-        html.P(
-            "Furthermore, we were able to identify the total number of fatalities resulting from accidents over the two decades, amounting to 2147 deaths. Among these, Districts 1, 2, 3, and 5 accounted for a combined total of 984 fatalities, while the remaining districts collectively reported 1163 fatalities. District 1 represented 14.2% of the total fatalities, District 2 contributed to 10.35% of the total fatalities, District 3 consisted of 8.3%, and District 5 accounted for 13.51% of all fatalities across the districts. This distribution highlights significant differences in fatality rates among the districts. Comparatively, the average percentage of fatalities for the other districts, excluding Districts 1, 2, 3, and 5, was calculated to be approximately 54%. This analysis highlights substantial variations in fatality rates between the specified districts and the rest.",
-            style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
-        html.P("Additionally, based on the tabulated data, we calculated micromorts for each district. Micromorts, derived from the formula y = (k/p) * (1000000/p), represent a measure of risk in one-in-a-million terms. The micromorts for each district are as follows: District 1 (0.0153), District 2 (0.0108), District 3 (0.009), District 5 (0.0146), and the average micromorts for the other six districts (0.0015), resulting in an overall average of 0.00872 micromorts. These micromort figures offer valuable insights into the comparative risk levels across different districts.",
-            style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
-    ], style={'flex': '1', 'margin-bottom': '0px', 'vertical-align': 'top'})
-], style={'display': 'flex', 'align-items': 'flex-start', 'justify-content': 'center'})
+# # Update the layout for the new table
+# table_layout = html.Div([
+#     html.Div([
+#         html.H2("Analysis",
+#                 style={'textAlign': 'center', 'color': '#FFFFFF', 'margin-bottom': '20px', 'margin-top': '10px'}),
+#         dash_table.DataTable(
+#             id='new-summary-table',
+#             columns=[{'name': col, 'id': col} for col in df_table.columns],
+#             data=df_table.to_dict('records'),
+#             style_table={'height': '800px', 'width': '700px', 'overflowY': 'auto'}
+#         ),
+#     ], style={'flex': '1', 'margin-right': '20px', 'margin-bottom': '0px', 'vertical-align': 'top'}),
+#
+#     html.Div([
+#         html.P(
+#             "Upon the inspection of the data analyzed and gathered, we were able to identify that out of the total 2701 accidents that occurred over the span of two decades in all of the districts, these particular 4 districts consisted of 52% of the total accidents, which is more than half.",
+#             style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
+#         html.P(
+#             "Furthermore, we were able to identify the total number of fatalities resulting from accidents over the two decades, amounting to 2147 deaths. Among these, Districts 1, 2, 3, and 5 accounted for a combined total of 984 fatalities, while the remaining districts collectively reported 1163 fatalities. District 1 represented 14.2% of the total fatalities, District 2 contributed to 10.35% of the total fatalities, District 3 consisted of 8.3%, and District 5 accounted for 13.51% of all fatalities across the districts. This distribution highlights significant differences in fatality rates among the districts. Comparatively, the average percentage of fatalities for the other districts, excluding Districts 1, 2, 3, and 5, was calculated to be approximately 54%. This analysis highlights substantial variations in fatality rates between the specified districts and the rest.",
+#             style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
+#         html.P("Additionally, based on the tabulated data, we calculated micromorts for each district. Micromorts, derived from the formula y = (k/p) * (1000000/p), represent a measure of risk in one-in-a-million terms. The micromorts for each district are as follows: District 1 (0.0153), District 2 (0.0108), District 3 (0.009), District 5 (0.0146), and the average micromorts for the other six districts (0.0015), resulting in an overall average of 0.00872 micromorts. These micromort figures offer valuable insights into the comparative risk levels across different districts.",
+#             style={'color': '#FFFFFF', 'font-size': '20px', 'margin-left': '20px'}),
+#     ], style={'flex': '1', 'margin-bottom': '0px', 'vertical-align': 'top'})
+# ], style={'display': 'flex', 'align-items': 'flex-start', 'justify-content': 'center'})
 
 
 
@@ -296,10 +296,10 @@ citations_section_layout = html.Div(style={'padding': '20px'}, children=[
             "City of San Antonio. (n.d.). City of san antonio open data. City of San Antonio Open Data. https://opendata-cosagis.opendata.arcgis.com/ ",
             style={'color': '#FFFFFF', 'font-size': '20px'}),
         html.P(
-            "",
+            "United States Department of Transportation. (n.d.). NHTSA file downloads (2021-2001). NHTSA.",
             style={'color': '#FFFFFF', 'font-size': '20px'}),
         html.P(
-            "",
+            "SA20202. (2023, January 31). SA2020 Select City Council Data (2023) Poverty Rate.",
             style={'color': '#FFFFFF', 'font-size': '20px'}),
     ])
 ])
@@ -459,7 +459,7 @@ app.layout = html.Div(style={'backgroundColor': '#000000', 'color': '#333', 'pad
     correlation_section_layout,
 
     # Add the table section
-    table_layout,
+    # table_layout,
 
     # Add the accident hotspots section
     accident_hotspots_section_layout,
