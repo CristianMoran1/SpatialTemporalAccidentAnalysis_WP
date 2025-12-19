@@ -1,1 +1,1 @@
-Traffic crash research project with an interactive web dashboard showing where and when crashes happen in San Antonio, plus supporting analysis code.
+This repository contains the code and website for my traffic accident research project. It focuses on San Antonio crash data and turns it into an interactive experience where you can explore spatial patterns, time trends, and high risk areas. The goal is to make crash risk easier to see and talk about, especially when it overlaps with infrastructure gaps and neighborhood level conditions.
