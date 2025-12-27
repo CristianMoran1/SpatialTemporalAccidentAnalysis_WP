@@ -23,6 +23,9 @@ These are screenshots of the interactive dashboard (hover tooltips, zoom/pan, an
 ### Safety + Equity (Poverty + Micromorts)
 ![Poverty and Micromorts](assets/poverty_and_micromorts.png)
 
+### Demo (interactive)
+![Dashboard demo](demo.gif)
+
 ## What is in this repo
 * `main.py` runs the workflow and builds the map output
 * `Council_Districts.geojson` boundary layer
