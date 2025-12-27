@@ -57,4 +57,4 @@ pip install -r requirements.txt
 python main.py
 
 # 5) Open locally in your browser
-example: http://....
+example: http://127.0.0.1:8050/
