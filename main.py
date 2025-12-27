@@ -126,7 +126,7 @@ def process_data(selected_year, cached_data):
             san_antonio_fatalities = bexar_texas_data['FATALS'].sum()
 
             # Spatial join to assign each accident to a district
-            gdf_accidents = gpd.sjoin(gdf_accidents, council_districts_geojson, how="left", op="within")
+            gdf_accidents = gpd.sjoin(gdf_accidents, council_districts_geojson, how="left", predicate="within")
 
             # Identified the correct column for districts in the accident dataset
             district_column_name = 'District'
@@ -882,4 +882,4 @@ def update_map(toggle_accidents, toggle_speed_humps, selected_years_range, click
 
 # Run the Dash app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
