@@ -33,10 +33,6 @@ These are screenshots of the interactive dashboard (hover tooltips, zoom/pan, an
 
 ## Quick start (run the dashboard locally)
 
-This project is a Dash + Plotly web app. Once it’s running, you can explore crashes across San Antonio with the year slider and layer toggles.
-
-## Quick start (run the dashboard locally)
-
 This project is a Dash + Plotly web app. Once it’s running, you can explore crashes across San Antonio with a year slider, layer toggles, and linked charts.
 
 ### Setup + run
