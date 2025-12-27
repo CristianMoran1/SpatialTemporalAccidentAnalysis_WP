@@ -57,4 +57,39 @@ pip install -r requirements.txt
 python main.py
 
 # 5) Open locally in your browser
-example: http://127.0.0.1:8050/
+example: (http://127.0.0.1:8050/)
+```
+## Project timeline
+
+This repo reflects work done over time (original analysis + recent cleanup for the MLH code sample).
+
+- Early build: collected and organized San Antonio crash + boundary layers, then built the first working dashboard to explore patterns by year and district.
+- Iteration: added multiple views (district snapshot, long-term trends, hotspot clustering, and the safety + equity context section).
+- Recent updates (for this repo): improved documentation, added screenshots of the running app, and made setup steps clearer so someone else can run it locally.
+
+If you are reviewing this as a code sample, the core value is the end to end pipeline (data to geospatial joins to interactive visuals) and how the interface supports exploration instead of a single static result.
+
+
+## Changelog
+
+### 2025 12
+- Updated README with a clearer setup and run workflow.
+- Added dashboard screenshots under `assets/` to show the interactive UI.
+- Cleaned up the repo structure and documentation so it is easier for others to reproduce locally.
+
+### Earlier development
+- Built the initial dashboard for exploring crash patterns across San Antonio council districts (2001 to 2021).
+- Added district-level summaries, long-term trend views, hotspot clustering visualization, and the safety + equity context section.
+
+
+## Troubleshooting
+
+- If `python main.py` runs but the page does not open, look in the terminal for the local URL (usually `http://127.0.0.1:8050/`) and open it manually.
+- If you see dependency issues, re-run:
+  - `pip install -r requirements.txt`
+- If you are using a new Python version and geospatial packages complain, try creating a fresh virtual environment and reinstalling requirements.
+
+
+## Notes on interpretation
+
+This dashboard is meant for exploration and communication. Hotspots and clustering highlight where crashes concentrate, but they are not causal claims. The goal is to surface patterns that can guide deeper investigation or policy discussion.
